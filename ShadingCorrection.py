@@ -27,7 +27,6 @@ def load_tif(path):
         images.append(np.array(img))
     return np.stack(images)
 
-images = load_tif('C:/Users/49157/work/wetransfer_test_2024-07-26_0808/test/143_signal_plane 2000-2009/15-27-55_143_640_l35_e75_r10164_st3_x4_z1_dhf7_Blaze[00 x 00]_C00_xyz-Table Z0000.ome-stitched_C01_T00000_Z02000_brighter.tif')
 images = load_tif('Path/To/.tif')
 
 basic = BaSiC(get_darkfield=True, smoothness_flatfield=1)
